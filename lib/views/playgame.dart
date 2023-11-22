@@ -131,7 +131,7 @@ class _PlayGameState extends State<PlayGame> {
       return;
     }
 
-    if (_shotsTaken.contains(pos)) {
+    if (_shotsTaken.contains(pos) || myHits.contains(pos)) {
       _showSnackbar(context, "You already attacked here.");
       return;
     }
